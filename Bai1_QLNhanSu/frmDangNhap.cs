@@ -29,7 +29,7 @@ namespace Bai1_QLNhanSu
                 frm1.Show();
                 Hide();
             }
-            else MessageBox.Show("Tên đăng nhập hoặc mật khẩu sai. Mời bạn nhập lại !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show("Tên đăng nhập hoặc mật khẩu  sai. Mời bạn nhập lại !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
