@@ -1,5 +1,6 @@
 ﻿namespace Bai1_QLNhanSu
 {
+     //Dai uy sonxay
     partial class frmNhanVien
     {
         /// <summary>
