@@ -164,9 +164,16 @@ namespace Bai1_QLNhanSu
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            frmNhanVien_Load(sender, e);
-            SetNull();
-            chon = 0;
+
+            if (DialogResult.Yes == MessageBox.Show("Bạn muốn huỷ thao tác này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+
+                MessageBox.Show("Huỷ thành công!");
+                frmNhanVien_Load(sender, e);
+                SetNull();
+                chon = 0;
+            }
+           
         }
 
         private void btnthoat_Click(object sender, EventArgs e)
