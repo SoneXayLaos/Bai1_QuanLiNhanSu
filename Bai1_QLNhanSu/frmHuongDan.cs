@@ -25,33 +25,42 @@ namespace Bai1_QLNhanSu
 
         private void trViewGioiThieu_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            if (e.Node.Name == "gtPhanMem")
-            {
-                GetFileAll("GioiThieuChung.txt");
-                Image img = Image.FromFile(@"Nhansu.jpg");
-                pictureBox1.BackgroundImage = img;
-            }
-            else
+               try
+               {
+                    if (e.Node.Name == "gtPhanMem")
+                    {
+                         GetFileAll("GioiThieuChung.txt");
+                         Image img = Image.FromFile(@"Nhansu.jpg");
+                         pictureBox1.BackgroundImage = img;
+                    }
+                    else
                 if (e.Node.Name == "gtDangNhap")
-                {
-                    GetFileAll("PhanDangNhap.txt");
-                    Image img = Image.FromFile(@"anh dang nhap.png");
-                    pictureBox1.BackgroundImage = img;
-                }
-                else
+                    {
+                         GetFileAll("PhanDangNhap.txt");
+                         Image img = Image.FromFile(@"anh dang nhap.png");
+                         pictureBox1.BackgroundImage = img;
+                    }
+                    else
                     if (e.Node.Name == "gtManHinhChinh")
                     {
-                        GetFileAll("PhanMain.txt");
-                        Image img = Image.FromFile(@"anh main.png");
-                        pictureBox1.BackgroundImage = img;
+                         GetFileAll("PhanMain.txt");
+                         Image img = Image.FromFile(@"anh main.png");
+                         pictureBox1.BackgroundImage = img;
                     }
                     else
                         if (e.Node.Name == "gtQLNS")
-                        {
-                            GetFileAll("PhanQuanLi.txt");
-                            Image img = Image.FromFile(@"anh nhan vien.png");
-                            pictureBox1.BackgroundImage = img;
-                        }
+                    {
+                         GetFileAll("PhanQuanLi.txt");
+                         Image img = Image.FromFile(@"anh nhan vien.png");
+                         pictureBox1.BackgroundImage = img;
+                    }
+               }
+               catch (Exception)
+               {
+
+                    MessageBox.Show("Đã upload thành công");
+               }
+            
         }
     }
 }
