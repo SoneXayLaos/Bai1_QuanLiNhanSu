@@ -60,6 +60,12 @@ namespace Bai1_QLNhanSu
 
                     MessageBox.Show("Đã upload thành công");
                }
+               private void txttk_TenHH_TextChanged(object sender, EventArgs e)
+        {
+            Reset();
+            dataGridView1.DataSource = hanghoa.TKHH_TenHH(txttk_TenHH.Text);
+
+        }
             
         }
     }
