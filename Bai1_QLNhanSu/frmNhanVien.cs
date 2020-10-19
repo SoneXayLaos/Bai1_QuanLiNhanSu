@@ -32,6 +32,8 @@ namespace Bai1_QLNhanSu
             btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
             btnLuu.Enabled = true;
         }
+        
+        
         void SetNull()
         {
             txtMaNV.Text = txtHoDem.Text = txtTenNV.Text = txtGT.Text = txtSDT.Text = txtDiaChi.Text = txtLuong.Text = "";
