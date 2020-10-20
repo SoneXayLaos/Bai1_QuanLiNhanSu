@@ -68,6 +68,20 @@ namespace Bai1_QLNhanSu
         }
             
         }
+        private void bt_go_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(txt_dc.Text);
+        }
+
+        private void bt_1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
+
+        private void bt_3_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoHome();
+        }
     }
     
 }
